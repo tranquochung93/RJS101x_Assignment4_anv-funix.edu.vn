@@ -1,0 +1,323 @@
+.user {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  /* margin-top: 50px; */
+}
+.aboutUser {
+  margin-top: 50px;
+}
+.avatarUser {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.listItem {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+.itemUser {
+  padding: 10px;
+  position: relative;
+  list-style: none;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.nameUser {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+}
+.AboutUser {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 20px;
+  height: 700px;
+}
+.userDepartmentContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  /* align-items: center; */
+  grid-template-columns: repeat(4, auto);
+  padding-top: 100px;
+}
+.aboutUserDepartment { 
+  height: auto;
+  padding: 0;
+}
+
+.userContainer {
+  margin-top: 25px;
+  display: flex;
+}
+.aboutUserDepartmentContainer {
+  display:block;
+  text-align: center;
+}
+.userImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.name,
+.time,
+.department,
+.timeRest {
+  margin-bottom: 25px;
+}
+.router {
+  display: flex;
+  align-items: center;
+}
+.userTitle {
+}
+.addUserAndSearch {
+  position: relative;
+  padding: 0px 15px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* display:flex;
+  align-items: center; */
+}
+.addContainer {
+  position: relative;
+}
+.add {
+  line-height: 10px;
+  padding: 5px 10px;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  background: rgb(139, 139, 139);
+  cursor: pointer;
+}
+
+.search {
+  position:absolute;
+  padding: 5px;
+  width: 30%;
+  right: 0;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 65px;
+}
+.buttonSearch {
+  padding:7px;
+  border:none;
+  outline: none;
+  border-radius:5px;
+  cursor: pointer;
+  color:#fff;
+  background:#0063f6;
+}
+.overLay {
+  position:absolute;
+  width: 100%;
+  height: 120vh;
+  inset:0;
+  background:rgba(0, 0, 0, 0.5);
+  z-index: 99999999;
+}
+.dashboardAdd {
+  position:absolute;
+  width: 500px;
+  margin-top: 10px;
+  border-radius:10px;
+  right: 50%;
+  transform: translateX(50%);
+  background:#fff;
+  padding:10px;
+  z-index: 999999999999;
+}
+.contentDashboard {
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.inputAdd {
+  position: relative;
+  display:flex;
+  margin-top: 20px;
+  /* margin-bottom: 30px; */
+  align-items:center;
+  justify-content: space-between;
+}
+.inputDashboard {
+  position:absolute;
+  width: 60%;
+  right: 0;
+}
+.select {
+  width: 60%;
+}
+.AddUser {
+  padding:7px;
+  border:none;
+  border-radius:10px;
+  color:#fff;
+  background:#0063f6;
+  cursor: pointer;
+}
+.errorInput {
+  color:red;
+  display: flex;
+  justify-content: center;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+.errorInputDate {
+  color:red;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.itemUserSearch {
+  /* position: relative; */
+  display:grid;
+  grid-template-columns:repeat(6, calc(100% / 6));
+}
+.avatarUserSearch {
+  width:100%;
+}
+.userNameSearch {
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width:fit-content;
+}
+.linkAboutUserSearch {
+  position: relative;
+  margin: 30px 15px;
+}
+.deleteUser {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color:#fff;
+  cursor: pointer;
+  z-index: 99;
+}
+.editUser {
+  position: absolute;
+  right: 40px;
+  top: 15px;
+  color:#fff;
+  cursor: pointer;
+  z-index: 99;
+}
+/* responsive tablet big */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .listItem {
+    grid-template-columns: auto auto auto;
+  }
+  .itemUserSearch {
+    grid-template-columns: auto auto auto;
+
+  }
+}
+
+/* responsive mobile */
+@media (max-width: 1023px) {
+  .listItem {
+    grid-template-columns: auto auto;
+  }
+  .itemUserSearch {
+    grid-template-columns: auto auto;
+
+  }
+  .user {
+    width: 100%;
+  }
+  .router {
+    font-size: 13px;
+  }
+}
+/* iphone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .userContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .userImage {
+    margin-bottom: 10px;
+  }
+}
+
+/* iphone 8 */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .userContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .userImage {
+    margin-bottom: 10px;
+  }
+}
+
+/* iphone 8 plus */
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  .userContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .userImage {
+    margin-bottom: 10px;
+  }
+}
+/* iphone 5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+  .userContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .userImage {
+    margin-bottom: 10px;
+  }
+  .router {
+    font-size: 10px;
+  }
+}
+/* <600px */
+@media (max-width: 600px) {
+  .userContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .userImage {
+    margin-bottom: 10px;
+  }
+  .router {
+    font-size: 10px;
+  }
+}
+
+/* <450px */
+@media (max-width: 450px) {
+  .userContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .userImage {
+    margin-bottom: 10px;
+  }
+  .router {
+    font-size: 10px;
+  }
+}

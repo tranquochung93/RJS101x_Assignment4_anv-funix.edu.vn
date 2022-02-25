@@ -1,0 +1,50 @@
+
+
+.headerContainer {
+    width: 80%;
+    padding:100px 20px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+.contentContainer {
+    margin-top: 30px;
+    width: 100%;
+    border: 5px solid rgb(245, 80, 80);
+    border-radius:20px;
+    padding:20px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+.content {
+    border: 1px solid rgb(179, 177, 177);
+    border-radius:5px;
+    padding:10px;
+    margin: 10px;
+}
+.payroll {
+    border-top: 1px solid rgb(133, 133, 133);
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.user {
+    margin-top: 15px;
+}
+
+/* ipad pro */
+@media (min-width:1024px) and (max-width:1365px) {
+    .contentContainer {
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width: 1023px) {
+    
+    .contentContainer {
+        grid-template-columns: auto;
+    }
+    .content {
+        padding:10px 30px;
+    }
+}

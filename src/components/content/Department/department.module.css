@@ -1,0 +1,35 @@
+
+.departmentContainer {
+    padding:100px 20px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.department {
+    padding:10px 20px;
+    border: 1px solid rgb(156, 155, 155);
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.departmentUser {
+    margin-top: 15px;
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .departmentContainer {
+        grid-template-columns: auto auto;
+    }
+}
+/* mobile */
+
+@media (max-width: 767px) {
+    .departmentContainer {
+        grid-template-columns: auto ;
+    }
+    .departmentContainer {
+        width:100%;
+    }
+}
